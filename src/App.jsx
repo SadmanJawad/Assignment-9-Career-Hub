@@ -33,3 +33,7 @@ function App() {
 }
 
 export default App
+
+
+  /* 
+  give me a object inside an array of 1 jobs including company image, job title, company name, location ,salary, job description, job responsibility, educational requirements, experience */
