@@ -8,24 +8,33 @@ import Statistics from "./components/Statistics";
 import Blog from "./components/Blog";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from "./components/Login";
+import JobDetails from "./components/JobDetails";
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path: "/",
     element: <App></App>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-      {path: '/', element: <Home></Home>},
-      {path: '/statistics', element: <Statistics></Statistics>},
-      {path: '/blog', element: <Blog></Blog>},
-      {path: '/login', element:<Login></Login>}
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("fakeData.json"),
+      },
+      { path: "/statistics", element: <Statistics></Statistics> },
+      { path: "/blog", element: <Blog></Blog> },
+      { path: "/login", element: <Login></Login> },
+      {
+        path: "/:id",
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch(`/fakeData.json`),
+      },
     ],
-
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

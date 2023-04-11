@@ -9,3 +9,10 @@
   .btn-primary{
     @apply  font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-md border-transparent border-2  text-white hover:bg-purple-900 bg-purple-600
   }
+  .btn-default {
+    @apply font-medium transition duration-200 shadow-md md:mb-0 px-2 py-1 lg:px-4 lg:py-3 md:px-6 md:py-3 lg:text-lg rounded-md border-transparent border-2 text-white hover:bg-orange-400 bg-gradient-to-r from-[#7E90FE] to-[#9873FF]
+}
+
+.btn-small{
+  @apply font-medium transition duration-200 shadow-md md:mb-0 px-3 py-1 md:px-4 md:py-1 text-lg rounded-sm border-transparent border-2 text-white hover:bg-orange-400 bg-gradient-to-r from-[#7E90FE] to-[#9873FF]
+}

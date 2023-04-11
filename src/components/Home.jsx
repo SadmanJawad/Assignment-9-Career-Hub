@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import hardy from "../assets/hardy.png";
 import JobCategory from "./JobCategory";
+import Featured from "./Featured";
 
 const Home = () => {
   const [jobLists, setJobLists] = useState([])
@@ -38,7 +39,7 @@ const Home = () => {
           className="mb-12 mt-12 rounded-lg md:w-fit"
         />
       </div>
-
+      {/* Category */}
       <div>
         <div className="text-center">
           <h1 className="text-5xl font-semibold mb-4">Job Category List</h1>
@@ -49,12 +50,13 @@ const Home = () => {
             jobLists.map(jobList=> <JobCategory
             key={jobList.id}
             jobList={jobList}
-            >
-              
+            >  
             </JobCategory>)
           }
         </div>
       </div>
+ {/* featured */} 
+    <Featured></Featured>
     </section>
   );
 };
