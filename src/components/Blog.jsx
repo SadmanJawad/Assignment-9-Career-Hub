@@ -2,7 +2,8 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='px-96 my-24 text-start'>
+        <div className='px-96 my-2 text-start'>
+             <h1 className='text-2xl font-bold mb-4 mx-48'>Blog Page</h1>
             <h1 className='bg-slate-400 text-xl font-semibold'>Q-1 : When should we use Context API?</h1>
             <p className='bg-slate-400'>Ans: In normal react application data is passed from top to down (parent to child) via props. But Context API provides a way to share or state between multiple components without prop drilling .</p>
             <h1 className='bg-green-400 mt-5 text-xl font-semibold'>Q-2 : What is custom hook?</h1>

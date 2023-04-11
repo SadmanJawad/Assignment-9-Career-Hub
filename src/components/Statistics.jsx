@@ -56,6 +56,7 @@ const Statistics = () => {
 
     return (
         <div className='mx-80 my-16' width="100%" height="100%"> 
+        <h1 className='text-xl font-bold mb-4'>Statistics of Assignment marks</h1>
         <AreaChart   width={800}
           height={400}
           data={assignmentMarksArr}

@@ -123,7 +123,7 @@ const Header = () => {
           </div>
         )}
       </div>
-      <button className="bg-purple-600 w-48 h-16  text-white text-xl font-semibold rounded-lg">Start Applying</button>
+      <button className="bg-purple-600 w-16 md:w-48 h-16 text-white text-sm md:text-xl font-semibold rounded-lg">Start Applying</button>
     </div>
     </div>
   );
