@@ -13,7 +13,7 @@ const Home = () => {
   
   return (
     <section>
-      <div className="flex px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="grid px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="my-container grid grid-cols-1 text-right pb-24 lg:pb-56 text-gray-900">
           <h1 className="text-2xl font-bold w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text">
             One Step Closer To Your{" "}
@@ -24,7 +24,7 @@ const Home = () => {
             need. Its your future. Come find it. Manage all your job application
             from start to finish.
           </p>
-          <div className="flex flex-wrap justify-center ml-96">
+          <div className="flex flex-wrap justify-center">
             <Link to="/login">
               <button type="button" className="btn-primary">
                 Get Started
@@ -35,7 +35,7 @@ const Home = () => {
         <img
           src={hardy}
           alt=""
-          className="mx-auto mb-12 mt-12 rounded-lg shadow-md"
+          className="mb-12 mt-12 rounded-lg shadow-md md:w-96"
         />
       </div>
 
