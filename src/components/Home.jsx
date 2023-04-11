@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import hardy from "../assets/hardy.png";
+import JobCategory from "./JobCategory";
 
 const Home = () => {
+  const [jobLists, setJobLists] = useState([])
+  useEffect(()=> {
+    fetch('jobList.json')
+    .then(res => res.json())
+    .then(data=> setJobLists(data))
+  },[])
+  
   return (
     <section>
       <div className="flex px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -29,6 +37,23 @@ const Home = () => {
           alt=""
           className="mx-auto mb-12 mt-12 rounded-lg shadow-md"
         />
+      </div>
+
+      <div>
+        <div className="text-center">
+          <h1 className="text-5xl font-semibold mb-4">Job Category List</h1>
+          <p className="text-gray-600">Explore thousands of job opportunities with all the information you need. Its your future</p>
+        </div>
+        <div className="grid  md:grid-cols-4 px-5 ml-9 mt-4">
+          {
+            jobLists.map(jobList=> <JobCategory
+            key={jobList.id}
+            jobList={jobList}
+            >
+              
+            </JobCategory>)
+          }
+        </div>
       </div>
     </section>
   );

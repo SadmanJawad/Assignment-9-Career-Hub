@@ -1,0 +1,27 @@
+[
+    {
+        "id": "70a20701",
+        "imgLink": "https://i.ibb.co/KsKfsKZ/accounts.png",
+        "title": "Account & finance",
+        "jobQuantity": "300 Jobs Available"
+    },
+    {
+        "id": "70a20702",
+        "imgLink": "https://i.ibb.co/fFWgrnj/lightbulb.png",
+        "title": "Creative Design",
+        "jobQuantity": "100+ Jobs Available"
+    },
+    {
+        "id": "70a20703",
+        "imgLink": "https://i.ibb.co/1skTRdW/social-media.png",
+        "title": "Marketing & Sales",
+        "jobQuantity": "150 Jobs Available"
+    },
+    {
+        "id": "70a20704",
+        "imgLink": "https://i.ibb.co/zrGw3nx/engineer.png",
+        "title": "Engineering Job",
+        "jobQuantity": "224 Jobs Available"
+    }
+]
+

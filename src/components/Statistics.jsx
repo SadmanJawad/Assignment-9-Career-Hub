@@ -55,8 +55,8 @@ const Statistics = () => {
     ]
 
     return (
-        <div  width="100%" height="100%"> 
-        <AreaChart   width={500}
+        <div className='mx-80 my-16' width="100%" height="100%"> 
+        <AreaChart   width={800}
           height={400}
           data={assignmentMarksArr}
           margin={{
