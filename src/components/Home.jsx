@@ -35,7 +35,7 @@ const Home = () => {
         <img
           src={hardy}
           alt=""
-          className="mb-12 mt-12 rounded-lg shadow-md md:w-fit"
+          className="mb-12 mt-12 rounded-lg md:w-fit"
         />
       </div>
 
