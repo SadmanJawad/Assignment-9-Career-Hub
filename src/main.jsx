@@ -9,6 +9,7 @@ import Blog from "./components/Blog";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from "./components/Login";
 import JobDetails from "./components/JobDetails";
+import AppliedJobs from "./components/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         element: <JobDetails></JobDetails>,
         loader: () => fetch('fakeData.json'),
       },
+      {
+        path:"/applied",
+        element: <AppliedJobs></AppliedJobs>
+      }
     ],
   },
 ]);

@@ -28,6 +28,11 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/applied" aria-label="Statistics" title="Statistics">
+          Applied Jobs
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/blog" aria-label="Blog" title="Blog">
             Blog
           </NavLink>
