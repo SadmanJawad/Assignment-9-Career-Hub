@@ -23,7 +23,7 @@ const Featured = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto md:ml-36 gap-6">
         {featuredJobs.map((job) => (
-          <div key={job.id}>
+          <div key={job.id} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
             <img className="mb-4 w-auto h-10" src={job.companyLogo} alt="" />
             <Link to={`/details/${job.id}`}>
               <h5 className="mb-2 text-2xl font-semibold tracking-tight ">

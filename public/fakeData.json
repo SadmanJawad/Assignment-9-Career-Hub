@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "companyLogo": "https://i.ibb.co/RbpfsLX/search.png",
     "jobTitle": "Marketing Coordinator",
     "companyName": "ABC Company",
@@ -16,7 +16,7 @@
     "contactEmail": "asusinfo@gmail.com"
   },
   {
-    "id": "2",
+    "id": 2,
     "companyLogo": "https://i.ibb.co/mzGJKn5/hp.png",
     "jobTitle": "Software Engineer",
     "companyName": "DEF Company",
@@ -32,7 +32,7 @@
     "contactEmail": "info@gmail.com"
   },
   {
-    "id": "3",
+    "id": 3,
     "companyLogo": "https://i.ibb.co/Ky2TwkK/microsoft.png",
     "jobTitle": "Graphic Designer",
     "companyName": "GHI Company",
@@ -48,7 +48,7 @@
     "contactEmail": "info@gmail.com"
   },
   {
-    "id": "4",
+    "id": 4,
     "companyLogo": "https://i.ibb.co/w0stGCc/apple.png",
     "jobTitle": "Human Resources Manager",
     "companyName": "JKL Company",
@@ -64,7 +64,7 @@
     "contactEmail": "info@gmail.com"
   },
   {
-    "id": "5",
+    "id": 5,
     "companyLogo": "https://i.ibb.co/LpNgzQM/samsung.png",
     "jobTitle": "Financial Analyst",
     "companyName": "MNO Company",
@@ -80,7 +80,7 @@
     "contactEmail": "info@gmail.com"
   },
   {
-    "id": "6",
+    "id": 6,
     "companyLogo": "https://i.ibb.co/MPqjXsF/asus.png",
     "jobTitle": "Marketing Manager",
     "companyName": "PQR Company",
