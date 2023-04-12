@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import JobDetails from "./components/JobDetails";
 import AppliedJobs from "./components/AppliedJobs";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/:id",
         element: <JobDetails></JobDetails>,
-        loader: () => fetch('fakeData.json'),
+        loader: () => fetch(`/fakeData.json`),
       },
       {
         path:"/applied",

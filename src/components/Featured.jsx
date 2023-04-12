@@ -5,7 +5,7 @@ const Featured = () => {
   const [cards, setCards] = useState(4);
 
   const featuredJobs = useLoaderData();
-  // const { id } = featuredJobs;
+  const { id } = featuredJobs;
   // console.log(featuredJobs)
 
 
