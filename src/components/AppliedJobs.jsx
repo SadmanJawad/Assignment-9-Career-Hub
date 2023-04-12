@@ -5,7 +5,6 @@ const AppliedJobs = () => {
     const [appliedJob, setAppliedJobs] = useState([]);
     const [filter, setFilter] = useState('all');
 
-
     useEffect(() => {
         const getAppliedJobs = async () => {
             const storedJobs = JSON.parse(localStorage.getItem('shopping-cart'));
@@ -20,7 +19,6 @@ const AppliedJobs = () => {
                         appliedJob.push(job);
                     }
                 }
-
                 setAppliedJobs(appliedJob);
                 // console.log(appliedJob);
             }
