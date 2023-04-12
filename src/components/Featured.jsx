@@ -5,8 +5,9 @@ const Featured = () => {
   const [cards, setCards] = useState(4);
 
   const featuredJobs = useLoaderData();
-  console.log(featuredJobs)
-  const { id } = featuredJobs;
+  // const { id } = featuredJobs;
+  // console.log(featuredJobs)
+
 
   const handleSeeAllBtn = () => {
     setCards(featuredJobs.length); // Set the number of cards to the total number of jobs
@@ -22,7 +23,7 @@ const Featured = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto md:ml-36 gap-6">
-        {featuredJobs.map((job) => (
+        {featuredJobs.slice(0, cards).map(job => (
           <div key={job.id} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
             <img className="mb-4 w-auto h-10" src={job.companyLogo} alt="" />
             <Link to={`/details/${job.id}`}>
