@@ -12,7 +12,7 @@ const Header = () => {
           title="ProCareer"
           className="inline-flex items-center"
         >
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-900 ">
+          <span className="ml-2 text-xl font-bold tracking-wide default text-gray-900 ">
             ProCareer
           </span>
         </Link>
