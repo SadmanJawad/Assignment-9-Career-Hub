@@ -18,7 +18,12 @@ const Header = () => {
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex  text-gray-500 font-semibold">
           <li>
-            <NavLink to="/" aria-label="Home" title="Home">
+            <NavLink
+              to="/"
+              aria-label="Home"
+              title="Home"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
               Home
             </NavLink>
           </li>
@@ -27,6 +32,7 @@ const Header = () => {
               to="/statistics"
               aria-label="Statistics"
               title="Statistics"
+              className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Statistics
             </NavLink>
@@ -36,12 +42,18 @@ const Header = () => {
               to="/applied"
               aria-label="Applied-Jobs"
               title="Applied-Jobs"
+              className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Applied Jobs
             </NavLink>
           </li>
           <li>
-            <NavLink to="/blog" aria-label="Blog" title="Blog">
+            <NavLink
+              to="/blog"
+              aria-label="Blog"
+              title="Blog"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
               Blog
             </NavLink>
           </li>
